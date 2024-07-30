@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="Ar">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="Style/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Style/Style.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="form-wrap">	
+            <div class="card">
+                <div class="card-header" >
+                    <div  role="group" aria-label="Basic mixed styles example">
+                        <button type="button" class="btn btn-outline-info" (click)="Naw()">اضافة</button>
+                        <button type="button" class="btn btn-outline-primary" (click)="Save()">حفظ</button>
+                        <button type="button" class="btn btn-outline-warning" (click)="Search()">بحث</button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form id="survey-form">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label id="name-label" for="name">الفندق</label>
+                                    <input type="text" name="name" id="name" placeholder="فندق المسيلة" class="form-control" disabled>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>نوع الحجز</label>
+                                    <select id="dropdown" name="respType" class="form-control" required>
+                                        <option disabled selected value>اختار نوع الحجز</option>
+                                        <option value="Days">يومي</option>
+                                        <option value="Months">فتري</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label id="email-label" for="RespNum">رقم الحجز</label>
+                                    <input type="number" name="RespNum" id="RespNum" placeholder="ادخل رقم الحجز" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label id="RespDate" for="RespDate">تاريخ الحجز</label>
+                                    <input type="datetime-local" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label id="ArrevDate" for="ArrevDate">تاريخ الوصول</label>
+                                    <input type="datetime-local" class="form-control" required id="ArrevDate">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>نوع الخدمة</label>
+                                    <select id="dropdown" name="ServiceType" class="form-control" required>
+                                        <option disabled selected value>اختار الخدمة </option>
+                                        <option value="Days">الخدمة الاولى</option>
+                                        <option value="Months">الخدمة الثانية</option>
+                                        <option value="Months">الخدمة الثالثة</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label id="StartDate" for="StartDate">تاريخ البداية</label>
+                                    <input type="datetime-local" class="form-control" required id="StartDate">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label id="StartDate" for="StartDate">تاريخ البداية</label>
+                                    <input type="datetime-local" class="form-control" required id="StartDate">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>العملة</label>
+                                    <select id="dropdown" name="Curancy" class="form-control" required>
+                                        <option disabled selected value>اختار العملة </option>
+                                        <option value="YR">ريال يمني</option>
+                                        <option value="YS">ريال سعودي</option>
+                                        <option value="$">دولار امريكي</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>الحالة</label>
+                                    <select id="dropdown" name="State" class="form-control" required>
+                                        <option disabled selected value>اختار الحالة </option>
+                                        <option value="Days">فعال</option>
+                                        <option value="Months">غير فعال</option>
+                                        <option value="Months">موقف</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label id="Amt" for="Amt">المبلغ</label>
+                                    <input type="number" class="form-control" required id="Amount",placeholder="ادخل المبلغ">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label id="Count" for="Count">العدد</label>
+                                    <input type="number" class="form-control" required id="Count",placeholder="ادخل العدد">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="txtDisc" class="form-label">البيان</label>
+                                    <textarea class="form-control" id="txtDisc" rows="3" placeholder="البيان"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>	
+    </div>
+    <script src="Style/js/bootstrap.bundle.min.js"></script>
+    <script src="Style/js/"></script>
+  </body>
+</html>
